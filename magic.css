@@ -37,21 +37,19 @@ h1::before{
     }
 }
 .top-content{
-    background-color: rgb(243, 243, 243);
+    background-color: #a68a64;
     width: 90%; margin: 0 auto 20px auto;
     border-radius: 5px; box-shadow: 3px 3px 5px lightgray;
 }
 h3{
-    height:100%;
-    background-color: lightgray;
-    line-height: 60px;
-    padding: 0 50px;
-    color: white;
+    height:100%; 
+    background-color: #936639;color: black;
+    line-height: 60px;padding: 0 50px;
 }
 label{
-    display: inline-block;
+    display: inline-block; 
     height: 100%; margin: 0 20px; line-height: 60px; font-size: 18px;
-    color: gray; cursor: pointer; transition: color .5s;
+    color: black; cursor: pointer; transition: color .5s;
 }
 label:hover{
     color: black;
@@ -83,24 +81,40 @@ label:hover{
 #check1:checked ~ .container .cert-gallery .cert{
     opacity: 1; transform: scale(1); position: relative; transition: .5s;
 }
-#check2:checked ~ .container .cert-gallery .ai{
+
+#check2:checked ~ .container .cert-gallery .networks{
     opacity: 1; transform: scale(1); position: relative;transition: .5s;
 }
-#check2:checked ~ .container .cert-gallery .python,
-#check2:checked ~ .container .cert-gallery .cyber{
+#check2:checked ~ .container .cert-gallery .cyber,
+#check2:checked ~ .container .cert-gallery .development,
+#check2:checked ~ .container .cert-gallery .ai{
     opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
+
 #check3:checked ~ .container .cert-gallery .cyber{
-    opacity: 1; transform: scale(1); position: relative;transition: .5s;
+    opacity: 1; transform: scale(1); position: relative; transition: .5s;
 }
-#check3:checked ~ .container .cert-gallery .python,
+#check3:checked ~ .container .cert-gallery .networks,
+#check3:checked ~ .container .cert-gallery .development,
 #check3:checked ~ .container .cert-gallery .ai{
-    opacity: 0; transform: scale(0); position: absolute;
+    opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
-#check4:checked ~ .container .cert-gallery .python{
-    opacity: 1; transform: scale(1); position: relative;transition: .5s;
+
+#check4:checked ~ .container .cert-gallery .development{
+    opacity: 1; transform: scale(1); position: relative; transition: .5s;
 }
 #check4:checked ~ .container .cert-gallery .cyber,
+#check4:checked ~ .container .cert-gallery .networks,
 #check4:checked ~ .container .cert-gallery .ai{
-    opacity: 0; transform: scale(0); position: absolute;
+    opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
+
+#check5:checked ~ .container .cert-gallery .ai{
+    opacity: 1; transform: scale(1); position: relative; transition: .5s;
+}
+#check5:checked ~ .container .cert-gallery .cyber,
+#check5:checked ~ .container .cert-gallery .networks,
+#check5:checked ~ .container .cert-gallery .development{
+    opacity: 0; transform: scale(0); position: absolute;transition: 0s;
+}
+
