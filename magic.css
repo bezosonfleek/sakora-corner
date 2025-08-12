@@ -21,7 +21,7 @@ h1{
 h1::before{
     content: '';
     position: absolute; width: 100px; height: 3px; 
-    background-color: red; bottom: -10px; left: 685px; 
+    background-color: red; bottom: -10px; left: 85px; 
     transform: translateX(-50%);
     animation: animate 4s linear infinite;
 }
@@ -117,4 +117,5 @@ label:hover{
 #check5:checked ~ .container .cert-gallery .development{
     opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
+
 
