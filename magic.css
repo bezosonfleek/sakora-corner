@@ -87,7 +87,8 @@ label:hover{
 }
 #check2:checked ~ .container .cert-gallery .cyber,
 #check2:checked ~ .container .cert-gallery .development,
-#check2:checked ~ .container .cert-gallery .ai{
+#check2:checked ~ .container .cert-gallery .ai,
+#check2:checked ~ .container .cert-gallery .general{
     opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
 
@@ -96,7 +97,8 @@ label:hover{
 }
 #check3:checked ~ .container .cert-gallery .networks,
 #check3:checked ~ .container .cert-gallery .development,
-#check3:checked ~ .container .cert-gallery .ai{
+#check3:checked ~ .container .cert-gallery .ai,
+#check3:checked ~ .container .cert-gallery .general{
     opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
 
@@ -105,7 +107,8 @@ label:hover{
 }
 #check4:checked ~ .container .cert-gallery .cyber,
 #check4:checked ~ .container .cert-gallery .networks,
-#check4:checked ~ .container .cert-gallery .ai{
+#check4:checked ~ .container .cert-gallery .ai,
+#check4:checked ~ .container .cert-gallery .general{
     opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
 
@@ -114,8 +117,20 @@ label:hover{
 }
 #check5:checked ~ .container .cert-gallery .cyber,
 #check5:checked ~ .container .cert-gallery .networks,
-#check5:checked ~ .container .cert-gallery .development{
+#check5:checked ~ .container .cert-gallery .development,
+#check5:checked ~ .container .cert-gallery .general{
     opacity: 0; transform: scale(0); position: absolute;transition: 0s;
 }
+
+#check6:checked ~ .container .cert-gallery .general{
+    opacity: 1; transform: scale(1); position: relative; transition: .5s;
+}
+#check6:checked ~ .container .cert-gallery .cyber,
+#check6:checked ~ .container .cert-gallery .networks,
+#check6:checked ~ .container .cert-gallery .development,
+#check6:checked ~ .container .cert-gallery .ai{
+    opacity: 0; transform: scale(0); position: absolute;transition: 0s;
+}
+
 
 
